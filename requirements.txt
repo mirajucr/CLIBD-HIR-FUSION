@@ -1,0 +1,11 @@
+torch
+torchvision
+open-clip-torch
+transformers
+numpy
+pandas
+tqdm
+h5py
+Pillow
+PyYAML
+wandb

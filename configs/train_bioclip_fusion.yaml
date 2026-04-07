@@ -1,0 +1,34 @@
+dataset_config:
+  csv_train_path: ./release_assets/csv/train_split.csv
+  csv_val_path: ./release_assets/csv/val.csv
+  image_hdf5_path: /path/to/original_256.hdf5
+  num_workers: 8
+
+pre_trained_model_config:
+  dnabert2: /path/to/DNABERT-2-117M
+  open_clip_bioclip: /path/to/open_clip_pytorch_model.bin
+  open_clip_vitl14: commonpool_xl_laion_s13b_b90k
+
+model_config:
+  use_bioclip: true
+  fix_text_encoder: true
+  use_gather: false
+  alpha: 1.0
+  beta: 0.99
+  gamma: 1.0
+  batch_size: 250
+  epochs: 10
+  print_freq: 10
+  lr_scheduler: one_cycle
+  save_path: ./checkpoints
+  fusion:
+    hidden_mult: 2
+    dropout: 0.0
+  lr_config:
+    lr: 1.0e-5
+    max_lr: 5.0e-5
+
+wandb_config:
+  wandb: false
+  api_key: ""
+  wandb_project_name: bioscan-clip-paper
