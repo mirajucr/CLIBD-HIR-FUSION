@@ -48,9 +48,11 @@ This GitHub-ready repository does not include the large model checkpoints or rel
 
 The code expects the BIOSCAN image file in HDF5 format with a top-level group named bioscan_dataset. The official BIOSCAN-1M Hugging Face dataset page includes original_256.hdf5, which matches the format used by this code.
 
-### Release assets to host separately
+### Release assets
 
-The following files should be uploaded to an external host such as Hugging Face, Zenodo, Google Drive, or institutional storage:
+The large release assets are not stored directly in this GitHub repository.
+
+Download links for the following files will be provided separately:
 
 - baseline.pt
 - ours_no_fusion.pt
@@ -59,8 +61,6 @@ The following files should be uploaded to an external host such as Hugging Face,
 - test.csv
 - train_split.csv
 - val.csv
-
-Once you host them, add the download links in this README.
 
 ## Suggested local layout after downloading everything
 
@@ -239,6 +239,3 @@ If you use this release, please cite the paper:
 - BioCLIP: https://huggingface.co/imageomics/bioclip
 - BIOSCAN-1M dataset: https://huggingface.co/datasets/bioscan-ml/BIOSCAN-1M
 
-## Final note
-
-This repository is now set up as a GitHub-friendly code release. Large checkpoints and CSV files should be hosted separately and linked from this README when you are ready to publish them.
