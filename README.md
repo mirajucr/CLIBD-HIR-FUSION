@@ -242,6 +242,3 @@ This release builds on a broader line of work in multimodal biodiversity learnin
 - BioCLIP: A Vision Foundation Model for the Tree of Life: https://imageomics.github.io/bioclip/
 - BIOSCAN-1M dataset: https://huggingface.co/datasets/bioscan-ml/BIOSCAN-1M
 
-## Final note
-
-This repository is set up as a GitHub-friendly code release. Large checkpoints and CSV files should be hosted separately and linked from this README when they are ready to be shared publicly.
