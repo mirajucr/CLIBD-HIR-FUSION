@@ -1,4 +1,4 @@
-# CLiBD-HiR Release
+# CLiBD-HiR-Fusion
 
 This repository is a paper-ready release for the work:
 
