@@ -8,7 +8,6 @@ Accepted to the ICLR 2026 Workshop on Foundation Models for Science (FM4Science)
 
 The repository is organized around the taxonomic inference setting studied in the paper: predicting taxonomic labels from specimen images, DNA barcodes, or both. The key idea is that taxonomic labels are hierarchical rather than flat, and that hierarchy can be used to learn more robust multimodal representations, especially when one modality is noisy or missing.
 
-The original bioscan_clip directory inside BIO-Project was left unchanged. Everything in this release lives inside clibd_hir_release.
 
 ## What is in this release
 
@@ -232,10 +231,17 @@ If you use this release, please cite the paper:
       year={2026}
     }
 
-## External resources referenced here
+## Related and inspiration works
 
-- Paper: https://arxiv.org/abs/2603.25573
-- DNABERT-2 117M: https://huggingface.co/zhihan1996/DNABERT-2-117M
-- BioCLIP: https://huggingface.co/imageomics/bioclip
+This release builds on a broader line of work in multimodal biodiversity learning. Readers may find the following papers and project pages useful.
+
+- Hierarchy-Guided Multimodal Representation Learning for Taxonomic Inference: https://arxiv.org/abs/2603.25573
+- CLIBD: Bridging Vision and Genomics for Biodiversity Monitoring at Scale: https://bioscan-ml.github.io/clibd/
+- Official CLIBD repository: https://github.com/bioscan-ml/bioscan-clip
+- DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome: https://arxiv.org/abs/2306.15006
+- BioCLIP: A Vision Foundation Model for the Tree of Life: https://imageomics.github.io/bioclip/
 - BIOSCAN-1M dataset: https://huggingface.co/datasets/bioscan-ml/BIOSCAN-1M
 
+## Final note
+
+This repository is set up as a GitHub-friendly code release. Large checkpoints and CSV files should be hosted separately and linked from this README when they are ready to be shared publicly.
